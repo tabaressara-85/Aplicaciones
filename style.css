@@ -1,0 +1,175 @@
+ /* =====================================================
+   ESTILOS: colores pastel y formas redondeadas
+   Estos estilos solo cambian la apariencia, no la lógica.
+   ===================================================== */
+ 
+/* Colores reutilizables (variables CSS) */
+:root {
+  --fondo: #fdf6f9;
+  --texto: #4a4458;
+  --lila: #cdb4db;
+  --lila-oscuro: #8e7cc3;
+  --rosa: #ffc8dd;
+  --rosa-fuerte: #ffafcc;
+  --celeste: #bde0fe;
+  --menta: #b9fbc0;
+  --durazno: #fff1e6;
+  --amarillo: #fdffb6;
+}
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px 15px 40px;
+  background: var(--fondo);
+  color: var(--texto);
+}
+ 
+/* ---------- Encabezado ---------- */
+.encabezado {
+  text-align: center;
+  padding: 25px 20px;
+  margin-bottom: 25px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, var(--rosa), var(--lila), var(--celeste));
+  box-shadow: 0 6px 16px rgba(150, 130, 180, 0.25);
+}
+ 
+.encabezado h1 {
+  margin: 0 0 6px;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(100, 80, 140, 0.35);
+}
+ 
+.encabezado p {
+  margin: 0;
+  color: #4a3f66;
+}
+ 
+/* ---------- Tarjetas (una por ejercicio) ---------- */
+.tarjeta {
+  position: relative;
+  background: #ffffff;
+  padding: 20px 24px;
+  margin-bottom: 22px;
+  border-radius: 24px;
+  border: 3px solid var(--lila);
+  box-shadow: 0 4px 12px rgba(150, 130, 180, 0.18);
+}
+ 
+.tarjeta h2 {
+  margin-top: 6px;
+  font-size: 1.2rem;
+  color: #6d6585;
+}
+ 
+.descripcion {
+  margin-top: 0;
+}
+ 
+/* Color de cada tarjeta */
+.tarjeta.rosa    { border-color: var(--rosa); }
+.tarjeta.celeste { border-color: var(--celeste); }
+.tarjeta.menta   { border-color: var(--menta); }
+ 
+.instrucciones {
+  background: var(--amarillo);
+  border-color: #f4f7a0;
+}
+ 
+.instrucciones ol {
+  margin: 0;
+  padding-left: 22px;
+  line-height: 1.7;
+}
+ 
+/* ---------- Etiqueta del tipo de ejercicio ---------- */
+.etiqueta {
+  display: inline-block;
+  padding: 3px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background: var(--lila);
+  color: #3d3550;
+}
+ 
+.rosa .etiqueta    { background: var(--rosa); }
+.celeste .etiqueta { background: var(--celeste); }
+.menta .etiqueta   { background: var(--menta); }
+ 
+/* ---------- Botones ---------- */
+.botones {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+ 
+button {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 25px;
+  background: var(--lila);
+  color: #3d3550;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(150, 130, 180, 0.3);
+  transition: transform 0.15s, background 0.15s;
+}
+ 
+button:hover {
+  background: var(--rosa-fuerte);
+  transform: translateY(-2px);
+}
+ 
+button.secundario {
+  background: #f1ecf7;
+  box-shadow: none;
+}
+ 
+button.secundario:hover {
+  background: #e4dcef;
+}
+ 
+/* ---------- Caja de resultado ---------- */
+.resultado {
+  padding: 14px 18px;
+  border-radius: 18px;
+  background: var(--durazno);
+  border: 2px dashed #ffd6b8;
+  font-weight: bold;
+  line-height: 1.7;
+  min-height: 3em;
+}
+ 
+/* ---------- Chips de referencia ---------- */
+.referencia {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 0;
+}
+ 
+.chip {
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: #f3effa;
+  font-size: 0.85rem;
+}
+ 
+/* ---------- Pie de página ---------- */
+.pie {
+  text-align: center;
+  padding: 14px;
+  border-radius: 20px;
+  background: #f3effa;
+  font-size: 0.9rem;
+}
+ 

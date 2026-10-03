@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividad de JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <!-- ENCABEZADO -->
+  <header class="encabezado">
+    <h1>🌸 Actividad de JavaScript</h1>
+    <p>Algoritmos secuenciales, condicionales y menú con switch</p>
+  </header>
+ 
+  <!-- CÓMO USAR -->
+  <section class="tarjeta instrucciones">
+    <h2>📝 Cómo usar esta página</h2>
+    <ol>
+      <li>Pulsa el botón del ejercicio que quieras probar.</li>
+      <li>Escribe los datos en las ventanas emergentes (prompt).</li>
+      <li>El resultado aparecerá en la caja de color debajo del botón.</li>
+    </ol>
+  </section>
+ 
+  <!-- EJERCICIO 1: Algoritmo secuencial -->
+  <section class="tarjeta rosa">
+    <span class="etiqueta">Secuencial</span>
+    <h2>💰 Ejercicio 1: Calculadora de propina</h2>
+    <p class="descripcion">Calcula la propina y el total a pagar a partir del monto de la cuenta.</p>
+    <div class="botones">
+      <button onclick="calculadoraPropina()">Ejecutar</button>
+      <button class="secundario" onclick="limpiarResultado('resultado1')">Limpiar</button>
+    </div>
+    <div id="resultado1" class="resultado">Aún no hay resultado.</div>
+  </section>
+ 
+  <!-- EJERCICIO 2: Condicionales if / else -->
+  <section class="tarjeta celeste">
+    <span class="etiqueta">if / else</span>
+    <h2>⚖️ Ejercicio 2: Clasificador de IMC</h2>
+    <p class="descripcion">Calcula tu índice de masa corporal y te dice en qué categoría estás.</p>
+    <div class="botones">
+      <button onclick="clasificadorIMC()">Ejecutar</button>
+      <button class="secundario" onclick="limpiarResultado('resultado2')">Limpiar</button>
+    </div>
+    <div id="resultado2" class="resultado">Aún no hay resultado.</div>
+ 
+    <!-- Tabla de referencia de categorías -->
+    <div class="referencia">
+      <span class="chip">Menor de 18.5: Bajo peso</span>
+      <span class="chip">18.5 – 24.9: Normal</span>
+      <span class="chip">25 – 29.9: Sobrepeso</span>
+      <span class="chip">30 o más: Obesidad</span>
+    </div>
+  </section>
+ 
+  <!-- EJERCICIO 3: Menú con switch -->
+  <section class="tarjeta menta">
+    <span class="etiqueta">switch</span>
+    <h2>🧭 Ejercicio 3: Menú de opciones</h2>
+    <p class="descripcion">Elige una opción en el menú y completa los datos que te pida.</p>
+    <div class="referencia">
+      <span class="chip">1. Celsius → Fahrenheit</span>
+      <span class="chip">2. Precio con IVA</span>
+      <span class="chip">3. Nota → Letra</span>
+    </div>
+    <div class="botones">
+      <button onclick="menuSwitch()">Ejecutar</button>
+      <button class="secundario" onclick="limpiarResultado('resultado3')">Limpiar</button>
+    </div>
+    <div id="resultado3" class="resultado">Aún no hay resultado.</div>
+  </section>
+ 
+  <!-- PIE DE PÁGINA -->
+  <footer class="pie">
+    Hecho con HTML, CSS y JavaScript 💜
+  </footer>
+ 
+  <!-- Conexión con el archivo JavaScript (al final del body para que los div ya existan) -->
+  <script src="script.js"></script>
+</body>
+</html>
